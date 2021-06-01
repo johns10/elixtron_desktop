@@ -1,8 +1,8 @@
-defmodule ElixtronAgentTest do
+defmodule ElixtronDesktopTest do
   use ExUnit.Case
-  doctest ElixtronAgent
+  doctest ElixtronDesktop
 
   test "greets the world" do
-    assert ElixtronAgent.hello() == :world
+    assert ElixtronDesktop.hello() == :world
   end
 end

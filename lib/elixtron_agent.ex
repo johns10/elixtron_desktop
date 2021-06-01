@@ -1,18 +1,5 @@
-defmodule ElixtronAgent do
-  @moduledoc """
-  Documentation for `ElixtronAgent`.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> ElixtronAgent.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
+defmodule ElixtronDesktop do
+  defdelegate open_browser(), to: ElixtronDesktop.Server
+  defdelegate connect(), to: ElixtronDesktop.Server
+  defdelegate navigate(url), to: ElixtronDesktop.Server
 end
